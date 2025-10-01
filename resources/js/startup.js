@@ -9,12 +9,3 @@ for(let i = entryNum; i > -1; i--) {
   entries.innerHTML += `<div id="${"entry"+i}" class="entry">${await getURL(baseURL+i+".html")}</div>`;
   console.log(await getURL(baseURL+i+".html"));
 }
-
-checkForEntries=setInterval(function(){
-  checkEntries();
-},1000);
-
-var lastEntry = 0;
-function checkEntries() {
-
-}
