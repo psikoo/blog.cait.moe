@@ -2,7 +2,7 @@ import { getURL } from "./get.js";
 
 let baseURL = "https://blog.cait.moe/entries/";
 // let baseURL = "http://127.0.0.1:5500/frontend-caitmoe/site/html/blog/entries/"
-let entryNum = parseInt(await getURL(baseURL+"counter.txt"))-3;
+let entryNum = parseInt(await getURL(baseURL+"counter.txt"))-2;
 let entries = document.getElementById("entries");
 
 for(let i = entryNum; i > -1; i--) {
