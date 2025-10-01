@@ -6,4 +6,4 @@ chmod +x ./build.sh
 touch ./entries/counter.txt
 echo $(ls ./entries | wc -l) > ./entries/counter.txt
 rm -rf ./out
-cp -r ./ ./out/
+rsync -Rr ./ ./out/
